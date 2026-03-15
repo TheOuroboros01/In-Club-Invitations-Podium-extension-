@@ -11,13 +11,13 @@ module.exports = async function runRateAndMessageMultipleLadies(page, tierConfig
     'Cayle','duushi','Louis','vicky','Hridita','хілларі','Alex','Анна','Lina','HOPE HOD KETER','НИЛО','Thynaël','Lana turner','Lamia','Elodeja','Kaoda Twinkle','Andreeasophia','Alexandra_Sunshine',
     'Anistemi','AitacJm','Abhigya','May Fernandes','LadyDeeDee','Cat Woman','Metal Princess','Queen of_girls','Ferozekhan.lover','Fenty','Annie','Harley Quinn','mykasa','Kahh','Auralis','melissa',
     'Renata','Athenaya','zani ali','tiki1','Mikasapisame','derya','Queen C','Αννα','Nesryn','Marki','FΣΛЯLΣSS','Didiqn','VALERIA','𝓐𝓷𝓷𝓪','Marina Fathy','azhar','Aurora','Katherine_Amara',
-    'Anastassia','CharShawn','DOLCE MILK','darkknightfallen','Shenhe','Medyson','MI 997','Hellga','Lady Ceceloves','liseokk',
+    'Anastassia','CharShawn','DOLCE MILK','darkknightfallen','Shenhe','Medyson','MI 997','Hellga','Lady Ceceloves','liseokk','gatsby_elle','Heeyat Sd',
     // add all names you want to exclude
   ].map(n => n.toLowerCase())); // convert to lowercase for case-insensitive matching
 
-  const m1 = 'Hunger is the best sauce in the world - Miguel de Cervantes.		Wishing you a relaxing weekend!	🌼🍃';
-  const m2 = 'Hunger is the best sauce in the world - Miguel de Cervantes.		Wishing you a relaxing weekend!	🌼🍃'; //already won
-  const m3 = 'Hunger is the best sauce in the world - Miguel de Cervantes.		Wishing you a relaxing weekend!	🌼🍃'; //168
+  const m1 = 'Where you stand is the center of the universe	🌌	You look fabulous in neon!! Max stars 4U my friend';
+  const m2 = 'Where you stand is the center of the universe	🌌	You look fabulous in neon!! Max stars 4U my friend'; //already won
+  const m3 = 'Where you stand is the center of the universe	🌌	You look fabulous in neon!! Max stars 4U my friend'; //168
 
   const tabLabel = page._guid || 'T?'; //internal tab label in playwright
 
