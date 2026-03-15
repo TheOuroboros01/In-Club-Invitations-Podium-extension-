@@ -67,7 +67,7 @@ module.exports = {
     { tierId: 10, startPage: 267, endPage: 273 },
     { tierId: 10, startPage: 274, endPage: 280 },
     { tierId: 10, startPage: 281, endPage: 287 },
-    { tierId: 10, startPage: 288, endPage: 293 }
+    { tierId: 10, startPage: 288, endPage: 296 }
   ],
 
   // ================= RUN 8 =================
@@ -85,7 +85,7 @@ module.exports = {
     { tierId: 9, startPage: 54, endPage: 62 },
     { tierId: 9, startPage: 63, endPage: 71 },
     { tierId: 9, startPage: 72, endPage: 80 },
-    { tierId: 9, startPage: 81, endPage: 87 },
+    { tierId: 9, startPage: 81, endPage: 85 },
     { tierId: 8, startPage: 1, endPage: 11 },
     { tierId: 8, startPage: 12, endPage: 22 }
   ],
@@ -97,7 +97,7 @@ module.exports = {
     { tierId: 8, startPage: 45, endPage: 55 },
     { tierId: 8, startPage: 56, endPage: 66 },
     { tierId: 8, startPage: 67, endPage: 77 },
-    { tierId: 8, startPage: 78, endPage: 90 }
+    { tierId: 8, startPage: 78, endPage: 91 }
   ],
 
   // ================= RUN 11 =================
@@ -117,7 +117,7 @@ module.exports = {
     { tierId: 7, startPage: 89, endPage: 99 },
     { tierId: 7, startPage: 100, endPage: 110 },
     { tierId: 7, startPage: 111, endPage: 121 },
-    { tierId: 7, startPage: 122, endPage: 127 }
+    { tierId: 7, startPage: 122, endPage: 126 }
   ],
 
   // ================= RUN 13 =================
@@ -137,7 +137,7 @@ module.exports = {
     { tierId: 6, startPage: 97, endPage: 108 },
     { tierId: 6, startPage: 109, endPage: 120 },
     { tierId: 6, startPage: 121, endPage: 132 },
-    { tierId: 6, startPage: 133, endPage: 145 }
+    { tierId: 6, startPage: 133, endPage: 143 }
   ],
 
   // ================= RUN 15 =================
@@ -157,7 +157,7 @@ module.exports = {
     { tierId: 5, startPage: 129, endPage: 144 },
     { tierId: 5, startPage: 145, endPage: 160 },
     { tierId: 5, startPage: 161, endPage: 176 },
-    { tierId: 5, startPage: 177, endPage: 194 }
+    { tierId: 5, startPage: 177, endPage: 192 }
   ],
 
   // ================= RUN 17 =================
@@ -177,7 +177,7 @@ module.exports = {
     { tierId: 4, startPage: 129, endPage: 144 },
     { tierId: 4, startPage: 145, endPage: 160 },
     { tierId: 4, startPage: 161, endPage: 176 },
-    { tierId: 4, startPage: 177, endPage: 197 }
+    { tierId: 4, startPage: 177, endPage: 193 }
   ]
 
 };
