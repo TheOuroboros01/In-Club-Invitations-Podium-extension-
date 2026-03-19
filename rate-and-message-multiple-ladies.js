@@ -16,9 +16,9 @@ module.exports = async function runRateAndMessageMultipleLadies(page, tierConfig
     // add all names you want to exclude
   ].map(n => n.toLowerCase())); // convert to lowercase for case-insensitive matching
 
-  const m1 = 'My Queen, this is for you. I bring you the stars, the stars from the borderless sea ~ Matt Suddain 🌌✨';
-  const m2 = 'My Queen, this is for you. I bring you the stars, the stars from the borderless sea ~ Matt Suddain 🌌✨'; //already won
-  const m3 = 'My Queen, this is for you. I bring you the stars, the stars from the borderless sea ~ Matt Suddain 🌌✨'; //168
+  const m1 = 'The rose has thorns only for those who would gather it - Chinese proverb	🌿🌹🌿	Max stars 4U my Queen. Happy Thursday! ^^';
+  const m2 = 'The rose has thorns only for those who would gather it - Chinese proverb	🌿🌹🌿	Sending good vibes your way. Happy Thursday! ^^'; //already won
+  const m3 = 'The rose has thorns only for those who would gather it - Chinese proverb	🌿🌹🌿	Sending good vibes your way. Happy Thursday! ^^'; //168
 
   const tabLabel = page._guid || 'T?'; //internal tab label in playwright
 
