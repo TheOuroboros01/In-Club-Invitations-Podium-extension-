@@ -16,7 +16,7 @@ module.exports = async function runRateAndMessageMultipleLadies(page, tierConfig
     // add all names you want to exclude
   ].map(n => n.toLowerCase())); // convert to lowercase for case-insensitive matching
 
-  const m1 = 'The rose has thorns only for those who would gather it - Chinese proverb	🌿🌹🌿	Max stars 4U my Queen. Happy Thursday! ^^';
+  const m1 = 'The rose has thorns only for those who would gather it - Chinese proverb	🌿🌹🌿	Max stars 4U Queen. Happy Thursday! ^^';
   const m2 = 'The rose has thorns only for those who would gather it - Chinese proverb	🌿🌹🌿	Sending good vibes your way. Happy Thursday! ^^'; //already won
   const m3 = 'The rose has thorns only for those who would gather it - Chinese proverb	🌿🌹🌿	Sending good vibes your way. Happy Thursday! ^^'; //168
 
