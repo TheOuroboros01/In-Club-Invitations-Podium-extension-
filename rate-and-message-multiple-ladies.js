@@ -12,13 +12,13 @@ module.exports = async function runRateAndMessageMultipleLadies(page, tierConfig
     'Anistemi','AitacJm','Abhigya','May Fernandes','LadyDeeDee','Cat Woman','Metal Princess','Queen of_girls','Ferozekhan.lover','Fenty','Annie','Harley Quinn','mykasa','Kahh','Auralis','melissa',
     'Renata','Athenaya','zani ali','tiki1','Mikasapisame','derya','Queen C','Αννα','Nesryn','Marki','FΣΛЯLΣSS','Didiqn','VALERIA','𝓐𝓷𝓷𝓪','Marina Fathy','azhar','Aurora','Katherine_Amara',
     'Anastassia','CharShawn','CVRA','DOLCE MILK','darkknightfallen','Shenhe','Medyson','MI 997','Hellga','liseokk','gatsby_elle','Heeyat Sd','Zahra','Furiosa','Scarlett','MOON DANCER','Sea Smoke','Silver Gryphon',
-    'genesssa','TOMI xR','viksa','seyoung','ell','iskrus','Love_Damon','the legend','zizoo','sawako','Gracelan','danae',
+    'genesssa','TOMI xR','viksa','seyoung','ell','iskrus','Love_Damon','the legend','zizoo','sawako','Gracelan','danae','Susie','Lillian-Grace','Isra and Douaa','Jill','Soleilla','G.Giovanna','Mila','Ива Лени','Doviliukas',
     // add all names you want to exclude
   ].map(n => n.toLowerCase())); // convert to lowercase for case-insensitive matching
 
-  const m1 = 'The rose has thorns only for those who would gather it - Chinese proverb	🌿🌹🌿	Max stars 4U Queen. Happy Thursday! ^^';
-  const m2 = 'The rose has thorns only for those who would gather it - Chinese proverb	🌿🌹🌿	Sending good vibes your way. Happy Thursday! ^^'; //already won
-  const m3 = 'The rose has thorns only for those who would gather it - Chinese proverb	🌿🌹🌿	Sending good vibes your way. Happy Thursday! ^^'; //168
+  const m1 = 'Till the flowers listen with unfolded bells; all winds murmur over summer grass - Bessie Rayner Parkes	🌿🌷	Happy 1st day of spring! Max stars 4U, lovely flower	(◍•ᴗ•◍)✿';
+  const m2 = 'Till the flowers listen with unfolded bells; all winds murmur over summer grass - Bessie Rayner Parkes	🌿🌷	Happy 1st day of spring, lovely flower	(◍•ᴗ•◍)✿'; //already won
+  const m3 = 'Till the flowers listen with unfolded bells; all winds murmur over summer grass - Bessie Rayner Parkes	🌿🌷	Happy 1st day of spring, lovely flower	(◍•ᴗ•◍)✿'; //168
 
   const tabLabel = page._guid || 'T?'; //internal tab label in playwright
 
