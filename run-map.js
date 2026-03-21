@@ -1,23 +1,23 @@
 module.exports = {
 
   // ================= RUN 1 =================
-  1: [
+  /*1: [
     { tierId: 10, startPage: 1,   endPage: 7 },
     { tierId: 10, startPage: 8,   endPage: 14 },
     { tierId: 10, startPage: 15,  endPage: 21 },
     { tierId: 10, startPage: 22,  endPage: 28 },
     { tierId: 10, startPage: 29,  endPage: 35 },
     { tierId: 10, startPage: 36,  endPage: 42 }
-  ], 
+  ], */
 
-  /* 1: [
+  1: [
   { tierId: 3, startPage: 1,   endPage: 50 },
   { tierId: 3, startPage: 51,  endPage: 100 },
   { tierId: 3, startPage: 101, endPage: 150 },
   { tierId: 3, startPage: 151, endPage: 200 },
   { tierId: 3, startPage: 201, endPage: 250 },
   { tierId: 3, startPage: 251, endPage: 299 }
- ], */
+ ],
 
  /* 1: [
   { tierId: 2, startPage: 1,   endPage: 57 },
