@@ -1,23 +1,14 @@
 module.exports = {
 
   // ================= RUN 1 =================
-  /*1: [
-    { tierId: 10, startPage: 1,   endPage: 7 },
-    { tierId: 10, startPage: 8,   endPage: 14 },
-    { tierId: 10, startPage: 15,  endPage: 21 },
-    { tierId: 10, startPage: 22,  endPage: 28 },
-    { tierId: 10, startPage: 29,  endPage: 35 },
-    { tierId: 10, startPage: 36,  endPage: 42 }
-  ], */ //true 1
-
   1: [
-    { tierId: 1, startPage: 1,   endPage: 1 },
-    { tierId: 1, startPage: 2,   endPage: 2 },
-    { tierId: 1, startPage: 3,  endPage: 3 },
-    { tierId: 1, startPage: 4,  endPage: 4 },
-    { tierId: 1, startPage: 5,  endPage: 5 },
-    { tierId: 1, startPage: 6,  endPage: 6 }
-  ], 
+    { tierId: 10, startPage: 1,   endPage: 50 },
+    { tierId: 10, startPage: 51,   endPage: 100 },
+    { tierId: 10, startPage: 101,  endPage: 150 },
+    { tierId: 10, startPage: 151,  endPage: 200 },
+    { tierId: 10, startPage: 201,  endPage: 250 },
+    { tierId: 10, startPage: 251,  endPage: 296 }
+  ], // full tier 10 divided into 6 slots.
 
   // ================= RUN 2 =================
   2: [
