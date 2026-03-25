@@ -43,7 +43,9 @@ module.exports = async function runRateAndMessageMultipleLadies(page, tierConfig
     'Dalia Cualler','Cris','Лина','RubyPhonic','SunnyBeam','jhh','Brittleigh','Wolf girl power','Nourhan','STORM K.',
     'MoniB','Meliss22','Спортяга200','Khloe','Silver Zoey','Supreme','Rosa Espinosa','Park Jeon','Elena','Mrs Amileah',
     'harley','TaDah','bestsuperstar1','liran','DiDa','Sorcha','Fabbyfabfab','Mapuнa Clear','mimijh','Queen Clairissa',
-    'Jessica Stewart','Monica','kajaz','Solo Killer','ERINА','Miss Nikys',
+    'Jessica Stewart','Monica','kajaz','Solo Killer','ERINА','Miss Nikys','Pammy','_Autumn_','Raven Red','Yennefer','nana','JullieneGlamour',
+    'Jayne','Esma','Olivia Louise','Elle Lee','Asmaa love','NinaElf','LADY KIM','Martina','Zdenul','Nelama','KalinneCris13','Twiztid Witch',
+    'ViKs_ViKs','taliah','LoriKyleene','Rhea','WaNgXiAn','A.W.','Bella',
   ].map(n => n.toLowerCase()));
 
   // 🚨 CANONICAL EXCLUSION SET (CLUB NAMES, case-insensitive)
@@ -68,7 +70,7 @@ module.exports = async function runRateAndMessageMultipleLadies(page, tierConfig
     'Fashion Wizard','Pretty in PINK','₪₪OΛΥΜΠUΣ₪₪','Witches of Arena','★ ᴇɴᴄʜᴀɴᴛᴇᴅ ★','Stylistas','Frizzle Sizzle','Mystique','Vintage Russia','Shangrila 2',
     'VIP ✩ Σxclυѕινε','Ocean Boulevard','♕Love Myself♕','ICE QUEENS','Butterfly Wings','♕Asian Lovers♕','LOYALTY','Female Forceღ','RockNRoll Ladies','RunwayMcFunway',
     'Лудите Бабки','Mode France','✧ Shining Star ✧','★Rebels★','Zellbury','𝓐𝖘𝖙𝖗𝖆','The Kool Kats','Fortune','Lovely Queens <3','VICTORY',
-    'Rule Breakers','Ƹ̴Ӂ̴ƷBuTtErFly','♔ Pearls 𝕀𝕀 ♔','New Era','Lunar Queens','UNIVERSE TEAM',
+    'Rule Breakers','Ƹ̴Ӂ̴ƷBuTtErFly','♔ Pearls 𝕀𝕀 ♔','New Era','Lunar Queens','UNIVERSE TEAM','♛✰ VR-46 ✰♛',
     // add more clubs here
   ].map(c => c.toLowerCase()));
 
