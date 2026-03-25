@@ -69,9 +69,9 @@ module.exports = async function runRateAndMessageMultipleLadies(page, tierConfig
     // add more clubs here
   ].map(c => c.toLowerCase()));
 
-  const m1 = 'Hi honey! Would you like to join our club? Donations aren’t required, just join club fights whenever you can. And no offence at all since I see you’re already in a club.';
-  const m2 = 'Hi honey! Would you like to join our club? Donations aren’t required, just join club fights whenever you can. And no offence at all since I see you’re already in a club.';
-  const m3 = 'Hi honey! Would you like to join our club? Donations aren’t required, just join club fights whenever you can. And no offence at all since I see you’re already in a club.';
+  const m1 = 'Hi honey! Would you like to join our club? Donations aren’t required, just join club fights whenever you can. No offence at all; I completely respect that you’re already in a club.';
+  const m2 = 'Hi honey! Would you like to join our club? Donations aren’t required, just join club fights whenever you can. No offence at all; I completely respect that you’re already in a club.';
+  const m3 = 'Hi honey! Would you like to join our club? Donations aren’t required, just join club fights whenever you can. No offence at all; I completely respect that you’re already in a club.';
 
   const tabLabel = page._guid || 'T?';
 
