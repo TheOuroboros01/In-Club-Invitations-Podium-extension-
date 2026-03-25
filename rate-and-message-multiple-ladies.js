@@ -46,7 +46,7 @@ module.exports = async function runRateAndMessageMultipleLadies(page, tierConfig
     'The Luna Ladies','Queens','Belladonna','Polish Ladies','Nirvana','Lovers','*Pretty Doll*','TEA','Hello Princess','Exquisite',
     '•The Originals•','Magical Queens','Amazons','Mačke sa Balkana','AURORA','B.YღurSelf ツ✿','WITCHES LAIR','Clannad','ANTI FASHION','The untouchable',
     'StilettosanJeans','Pink World💖','Carefree Couture','ROSE AMBER','..♥♛Русские♛♥..','STEEL PANTHER','CͨђAͣRͬMⷨEͤDͩ ⚝','A Perfect Storm','EMERALD CITY','Luxury⚜️',
-    'MOON Selene','ღ Carpe Diem ღ','Colors Of Beauty','WINCHESTER GIRLS','" MAKE UP "','ꨄ HOT STAR ꨄ','White Angels','Thunderbird','EtherealUnicorns','Zeldas',
+    'MOON Selene','ღ Carpe Diem ღ','Colors Of Beauty','WINCHESTER GIRLS','MAKE UP','ꨄ HOT STAR ꨄ','White Angels','Thunderbird','EtherealUnicorns','Zeldas',
     'Fashion Wizard','Pretty in PINK','₪₪OΛΥΜΠUΣ₪₪','Witches of Arena','★ ᴇɴᴄʜᴀɴᴛᴇᴅ ★','Stylistas','Frizzle Sizzle','Mystique','Vintage Russia','Shangrila 2',
     'VIP ✩ Σxclυѕινε','Ocean Boulevard','♕Love Myself♕','ICE QUEENS','Butterfly Wings','♕Asian Lovers♕','LOYALTY','Female Forceღ','RockNRoll Ladies','RunwayMcFunway',
     'Лудите Бабки','Mode France','✧ Shining Star ✧','★Rebels★','Zellbury','𝓐𝖘𝖙𝖗𝖆','The Kool Kats','Fortune','Lovely Queens <3','VICTORY',
