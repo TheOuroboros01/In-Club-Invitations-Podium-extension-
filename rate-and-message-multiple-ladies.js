@@ -45,7 +45,7 @@ module.exports = async function runRateAndMessageMultipleLadies(page, tierConfig
     'harley','TaDah','bestsuperstar1','liran','DiDa','Sorcha','Fabbyfabfab','Mapuнa Clear','mimijh','Queen Clairissa',
     'Jessica Stewart','Monica','kajaz','Solo Killer','ERINА','Miss Nikys','Pammy','_Autumn_','Raven Red','Yennefer','nana','JullieneGlamour',
     'Jayne','Esma','Olivia Louise','Elle Lee','Asmaa love','NinaElf','LADY KIM','Martina','Zdenul','Nelama','KalinneCris13','Twiztid Witch',
-    'ViKs_ViKs','taliah','LoriKyleene','Rhea','WaNgXiAn','A.W.','Bella',
+    'ViKs_ViKs','taliah','LoriKyleene','Rhea','WaNgXiAn','A.W.','Bella', //removed most presidents till 7900 fame or page 14 of club ranks page or top 280 clubs in the game
   ].map(n => n.toLowerCase()));
 
   // 🚨 CANONICAL EXCLUSION SET (CLUB NAMES, case-insensitive)
