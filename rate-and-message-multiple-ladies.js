@@ -65,13 +65,13 @@ module.exports = async function runRateAndMessageMultipleLadies(page, tierConfig
     'Fashion Wizard','Pretty in PINK','₪₪OΛΥΜΠUΣ₪₪','Witches of Arena','★ ᴇɴᴄʜᴀɴᴛᴇᴅ ★','Stylistas','Frizzle Sizzle','Mystique','Vintage Russia','Shangrila 2',
     'VIP ✩ Σxclυѕινε','Ocean Boulevard','♕Love Myself♕','ICE QUEENS','Butterfly Wings','♕Asian Lovers♕','LOYALTY','Female Forceღ','RockNRoll Ladies','RunwayMcFunway',
     'Лудите Бабки','Mode France','✧ Shining Star ✧','★Rebels★','Zellbury','𝓐𝖘𝖙𝖗𝖆','The Kool Kats','Fortune','Lovely Queens <3','VICTORY',
-    'Rule Breakers','Ƹ̴Ӂ̴ƷBuTtErFly',
+    'Rule Breakers','Ƹ̴Ӂ̴ƷBuTtErFly','♔ Pearls 𝕀𝕀 ♔','New Era','Lunar Queens','UNIVERSE TEAM',
     // add more clubs here
   ].map(c => c.toLowerCase()));
 
-  const m1 = 'Hi';
-  const m2 = 'Hi';
-  const m3 = 'Hi';
+  const m1 = 'Hi honey! Would you like to join our club? Donations aren’t required, just join club fights whenever you can. And no offence at all since I see you’re already in a club.';
+  const m2 = 'Hi honey! Would you like to join our club? Donations aren’t required, just join club fights whenever you can. And no offence at all since I see you’re already in a club.';
+  const m3 = 'Hi honey! Would you like to join our club? Donations aren’t required, just join club fights whenever you can. And no offence at all since I see you’re already in a club.';
 
   const tabLabel = page._guid || 'T?';
 
