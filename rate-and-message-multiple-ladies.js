@@ -40,7 +40,10 @@ module.exports = async function runRateAndMessageMultipleLadies(page, tierConfig
     'Lagherta','brean','LADY-XXX','хрисит','klara','Lada116','chanel','Raneta','Omnia Revertutur','Fari',
     'MrsAnt','SkyTraveller','janajana','Monika','kafy','BeautyMarie17','Monica','Gabriella Elena','Lady Gaga','Lisette',
     'kanza','Saba Maca','Menekse','Ally','Geda','leide paixao','teddyB','betsi','ASH','camila',
-    'Dalia Cualler','Cris',
+    'Dalia Cualler','Cris','Лина','RubyPhonic','SunnyBeam','jhh','Brittleigh','Wolf girl power','Nourhan','STORM K.',
+    'MoniB','Meliss22','Спортяга200','Khloe','Silver Zoey','Supreme','Rosa Espinosa','Park Jeon','Elena','Mrs Amileah',
+    'harley','TaDah','bestsuperstar1','liran','DiDa','Sorcha','Fabbyfabfab','Mapuнa Clear','mimijh','Queen Clairissa',
+    'Jessica Stewart','Monica','kajaz','Solo Killer','ERINА','Miss Nikys',
   ].map(n => n.toLowerCase()));
 
   // 🚨 CANONICAL EXCLUSION SET (CLUB NAMES, case-insensitive)
