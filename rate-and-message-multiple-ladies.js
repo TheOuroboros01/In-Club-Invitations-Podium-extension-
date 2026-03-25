@@ -162,7 +162,7 @@ module.exports = async function runRateAndMessageMultipleLadies(page, tierConfig
     console.log('✅ No excluded ladies detected automatically.');
   }
 
-  await page.waitForTimeout(1800000);
+  await page.waitForTimeout(1800000); //delay or pause for manual verification
 
   // ─────────────────────────────────────────────
   // ✅ FINAL FILTER
