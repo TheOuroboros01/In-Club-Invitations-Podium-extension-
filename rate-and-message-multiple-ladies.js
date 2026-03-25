@@ -70,7 +70,7 @@ module.exports = async function runRateAndMessageMultipleLadies(page, tierConfig
     'Fashion Wizard','Pretty in PINK','₪₪OΛΥΜΠUΣ₪₪','Witches of Arena','★ ᴇɴᴄʜᴀɴᴛᴇᴅ ★','Stylistas','Frizzle Sizzle','Mystique','Vintage Russia','Shangrila 2',
     'VIP ✩ Σxclυѕινε','Ocean Boulevard','♕Love Myself♕','ICE QUEENS','Butterfly Wings','♕Asian Lovers♕','LOYALTY','Female Forceღ','RockNRoll Ladies','RunwayMcFunway',
     'Лудите Бабки','Mode France','✧ Shining Star ✧','★Rebels★','Zellbury','𝓐𝖘𝖙𝖗𝖆','The Kool Kats','Fortune','Lovely Queens <3','VICTORY',
-    'Rule Breakers','Ƹ̴Ӂ̴ƷBuTtErFly','♔ Pearls 𝕀𝕀 ♔','New Era','Lunar Queens','UNIVERSE TEAM','♛✰ VR-46 ✰♛',
+    'Rule Breakers','Ƹ̴Ӂ̴ƷBuTtErFly','♔ Pearls 𝕀𝕀 ♔','New Era','Lunar Queens','UNIVERSE TEAM','♛✰ VR-46 ✰♛','Dazzling Divas 💎',
     // add more clubs here
   ].map(c => c.toLowerCase()));
 
