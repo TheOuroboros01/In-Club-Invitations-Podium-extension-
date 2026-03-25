@@ -30,7 +30,27 @@ module.exports = async function runRateAndMessageMultipleLadies(page, tierConfig
 
   // 🚨 CANONICAL EXCLUSION SET (CLUB NAMES, case-insensitive)
   const excludedClubNames = new Set([
-    'venomous',
+    'VENUS®','Valkyries','JJF','Models Inc💎','Catladies','VENUS®𝕀𝕀','NStyleSisterhood','Gang Girls','Angel Wings','STAR WORLD',
+    'Eternal Muses','Royal Fashionist','Models BG 💥','Scream Queens','👑 ՏմӀԵɑղՏ 👑','PRINCESAS','The RUNAWAYS','Tacky Patrol','╰☆☆ ✿Balkαnkє✿ ☆','REALM OF ANGELS',
+    'HellHounds','ф Exultant ф','ღ BGR ღ','NEW-BegiNNinG','MERMAIDS','† МОНАСТЫРЬ †','🎶Gσʅԃєɲ Sιɾєɲʂ','Fashion Queens','MOON','Eldur Crest Clan',
+    'cRaZy GrEeKs','cool girls','Models Ltd 🌸','♔ʀԑıԍղ♕','Alluring Ocean','Glam Girls','Secret team','✿WiLD❀♡❀AnGeLs✿','Snowflake','Shangrila',
+    'Peace Keepers','Stardust_Mirage','~Heroes~Hősök~','Відьомська хата','SILVER HEARTS','REVOLUTION','Black & White','The Hydras','💕HouseOfMystery💕','*SUPER STARS*',
+    'Purple Punk','Elite Sisters','Wicked Ladies','MOON Pandora','Diamond Angels','♡Balkan girls♡','PoshCulture','Lavender Honey','H?dden','⋆˚ MARKHØRS ˚⋆',
+    'REVOLUTION Agéma','MOON Callisto','Alpha','Joyous','۞Charmed Dreams۞','Stilettos & Lace','Indonesian Girls','MOON Rhea','Fantasia','♚ First.Ladies ♚',
+    'Strong Ladys 🍀','Purple Reigns','♔Bulgaria♔','Bulgarian Girls','Glamour L Empire','WAVES','Warrior Angels','Elite','Divas','Wonderland',
+    '⭐CrèmeDeLaCrème⭐','ღFemme Fatalesღ','DeScEnT QuEEnS','╰☆☆☆FANTASIA☆☆☆','💎丅ᕼᗴ Ǥᖇᗴᗩ丅ᗴᔕ丅💙','Red Roses Club','Mꨄ︎gic','PLAYBOY KITTENS','•Winner♡Ladies•','Wild Cats',
+    'Fireflies','PaRiS Maj3stic','MaJ3stic Ang3Ls','Daisy','Magyarok','♔ RoYaL LaDiEs ♔','Las Vikingas sp','Black Dahlia','Dancing Queens','KARMA - SAMSARA',
+    '♥ PINK ♥','*Midnight Gleam*','Royal Belles','💗DIVINE💗','♔ Pearls ♔','Jokers and Aces','$ღoкiภ Ѧcℯ$','Always For Doina','Regal Ladies','♥The dreamers♥',
+    'InItToWinIt','𝒫𝒾𝒳ℯℒ ℳℴ𝒟ℯℒ','≈Floribunda≈','New Generation','Diamond💎Divas','🤝KINDREDSPIRITS🤝','Charmed','Invicta','Royal Angels','Beauty✿Blossoms',
+    'The Rejected','Fashion Forward','Glamуrkа','𝓡𝓸𝓼𝓮𝓼','E T E O N','Quiksilvers Club','Girlgroup','Fashionistas','The OG clannad','Pink Realty',
+    'The Luna Ladies','Queens','Belladonna','Polish Ladies','Nirvana','Lovers','*Pretty Doll*','TEA','Hello Princess','Exquisite',
+    '•The Originals•','Magical Queens','Amazons','Mačke sa Balkana','AURORA','B.YღurSelf ツ✿','WITCHES LAIR','Clannad','ANTI FASHION','The untouchable',
+    'StilettosanJeans','Pink World💖','Carefree Couture','ROSE AMBER','..♥♛Русские♛♥..','STEEL PANTHER','CͨђAͣRͬMⷨEͤDͩ ⚝','A Perfect Storm','EMERALD CITY','Luxury⚜️',
+    'MOON Selene','ღ Carpe Diem ღ','Colors Of Beauty','WINCHESTER GIRLS','" MAKE UP "','ꨄ HOT STAR ꨄ','White Angels','Thunderbird','EtherealUnicorns','Zeldas',
+    'Fashion Wizard','Pretty in PINK','₪₪OΛΥΜΠUΣ₪₪','Witches of Arena','★ ᴇɴᴄʜᴀɴᴛᴇᴅ ★','Stylistas','Frizzle Sizzle','Mystique','Vintage Russia','Shangrila 2',
+    'VIP ✩ Σxclυѕινε','Ocean Boulevard','♕Love Myself♕','ICE QUEENS','Butterfly Wings','♕Asian Lovers♕','LOYALTY','Female Forceღ','RockNRoll Ladies','RunwayMcFunway',
+    'Лудите Бабки','Mode France','✧ Shining Star ✧','★Rebels★','Zellbury','𝓐𝖘𝖙𝖗𝖆','The Kool Kats','Fortune','Lovely Queens <3','VICTORY',
+    'Rule Breakers','Ƹ̴Ӂ̴ƷBuTtErFly',
     // add more clubs here
   ].map(c => c.toLowerCase()));
 
