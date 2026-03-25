@@ -25,7 +25,22 @@ module.exports = async function runRateAndMessageMultipleLadies(page, tierConfig
     'Silver Gryphon','genesssa','TOMI xR','viksa','seyoung','ell','iskrus','Love_Damon',
     'the legend','zizoo','sawako','Gracelan','danae','Susie','Lillian-Grace','Isra and Douaa',
     'Jill','Soleilla','G.Giovanna','Mila','Ива Лени','Doviliukas','Iro','My beautiful lady',
-    'Maryse','Reckless_ThinG','Danicawho','Surìe','Ever','Paris.Winter','perinaz','ash0101'
+    'Maryse','Reckless_ThinG','Danicawho','Surìe','Ever','Paris.Winter','perinaz','ash0101',
+    'MARINA','Fiercelee','trakunia','ivana','Amanda','Niki','golodlove','Hellga','baby c','Alaska',
+    'Susie','Lngelina','Amber Elizabeth','Kelly Shanum','Ava','lulumarlene','Aquamarine','nata0508','kat','Satou',
+    'Katharina','Avaleina','Lady Evie Solange','Medyson','NUR10','Ανελιζ','HollyBri','Nadja','Phoenix','Boryanaaa',
+    'Karolina','Jessica','Mia','Megane','Zornitsa','Nivien','Ranime anni','IsaDora','Lady Nina','Klerry',
+    'perunita 2022','SasanaCrow','Tessa','Elza 92','Sayuri','Ekin','Cremesi','Jasmin','funny 2','Samantha Sumers',
+    'Leona','Estefania Soledad','Tristania','ᙁᎯᙁᙁᏋᏋ','leelee','GIORDANI','Freya','Cora','Quintella','minoflora',
+    'Nicanora','LUCY','Allora Lyric','Tryn','Ikky Watari','anabella_x13','kamill','Rimantė','Yri moon','Andrea_dea12',
+    'eli20158','dazou','Wiki13579','BlooBerry','bezimena','Irene','Camy18','ivaivka','Flora','missy90120',
+    'Nayara','Lolatralala','Meyghan','churruska','jossh','Lal Deniz','Эмма','Tamunia','kusum','Lasma25',
+    'Романтика','Charice','tamara','aaaa','M.A.Y.','JULLY','Nihane','naina','Isa Gold','Krystyna. S. Buraków',
+    'Azulinderella','Marki','Veselina','gözdem','TitaLopes','Bouthy','Thando','MichelleGrace','giusep','QueerQueen',
+    'Lagherta','brean','LADY-XXX','хрисит','klara','Lada116','chanel','Raneta','Omnia Revertutur','Fari',
+    'MrsAnt','SkyTraveller','janajana','Monika','kafy','BeautyMarie17','Monica','Gabriella Elena','Lady Gaga','Lisette',
+    'kanza','Saba Maca','Menekse','Ally','Geda','leide paixao','teddyB','betsi','ASH','camila',
+    'Dalia Cualler','Cris',
   ].map(n => n.toLowerCase()));
 
   // 🚨 CANONICAL EXCLUSION SET (CLUB NAMES, case-insensitive)
