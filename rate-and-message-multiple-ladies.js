@@ -74,9 +74,10 @@ module.exports = async function runRateAndMessageMultipleLadies(page, tierConfig
     // add more clubs here
   ].map(c => c.toLowerCase()));
 
-  const m1 = 'Hi honey! Would you like to join our club? Donations aren’t required, just join club fights whenever you can. No offence at all; I completely respect that you’re already in a club.';
-  const m2 = 'Hi honey! Would you like to join our club? Donations aren’t required, just join club fights whenever you can. No offence at all; I completely respect that you’re already in a club.';
-  const m3 = 'Hi honey! Would you like to join our club? Donations aren’t required, just join club fights whenever you can. No offence at all; I completely respect that you’re already in a club.';
+  const m1 = 'hru!';
+  const m2 = 'hru!';
+  const m3 = 'hru!';
+  //Hi honey! If you're open to a change, would u like to join our club? Donations aren’t needed, just participate in club fights when u can. In 2-3 weeks, we plan to win all 5 club trophies to help boost gameplay. It'd be lovely to have u with us! :)
 
   const tabLabel = page._guid || 'T?';
 
