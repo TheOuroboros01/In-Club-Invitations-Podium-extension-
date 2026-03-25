@@ -3,14 +3,35 @@ module.exports = async function runRateAndMessageMultipleLadies(page, tierConfig
 
   // 🚨 CANONICAL EXCLUSION SET (LADY NAMES, case-insensitive)
   const excludedLadyNames = new Set([
-    'Bella Swan','Veronica Park','smyle','Dee Dee Kelley','Indila','Zelda Hyrule','Katarina L.',
-    // ... (UNCHANGED — FULL LIST PRESERVED)
+    'Bella Swan','Veronica Park','smyle','Dee Dee Kelley','Indila','Zelda Hyrule','Her Majesty',
+    'Sakura Haruno','Wild Rose','Agent X','Giggles','Pania','Everest','RAMBØ XT','Katniss Everdeen',
+    'lady liz','Lotus','LXUU_ABDE','Queen Taylen','Natasha Romanoff','Jodza','Joselia','Astoria',
+    'уσυηg кιηg','Red Queen','Lady Penelope','Scarlet Timberlake','Ashley','AVA','MELODY','AjS_StYlE',
+    'King Tyler','Nicole_Edgar','Jhosseline','Jewerline','Mpetty','nadia','Sara','Brianna','Jasmine',
+    'Natally','Лана','LaooyaA','Alexandra','Stefanie','katinka-jc','Gizem','Maya','Donna Rowe',
+    'Artemisa','Miškica','Octavia','Lady Jamie','اماندا N','stef','Emma','Shiry','margo1726',
+    'Veronica','Aelin Galathynius','elegent julei','The Pirate','lady Sophia','Serena','liya',
+    'Cathexo','Amelia Jacobs','Eman32','Kleophya','MistfulSky','Alira','AnnaRegina','Isabella',
+    'Athena','veronika','Chloe','Sylvia Lorena','Сензация','nade','denny','lady05','jood14',
+    'COCCOLE....','Cayle','duushi','Louis','vicky','Hridita','хілларі','Alex','Анна','Lina',
+    'HOPE HOD KETER','НИЛО','Thynaël','Lana turner','Lamia','Elodeja','Kaoda Twinkle',
+    'Andreeasophia','Alexandra_Sunshine','Anistemi','AitacJm','Abhigya','May Fernandes',
+    'LadyDeeDee','Cat Woman','Metal Princess','Queen of_girls','Ferozekhan.lover','Fenty',
+    'Annie','Harley Quinn','mykasa','Kahh','Auralis','melissa','Renata','Athenaya','zani ali',
+    'tiki1','Mikasapisame','derya','Queen C','Αννα','Nesryn','Marki','FΣΛЯLΣSS','Didiqn',
+    'VALERIA','𝓐𝓷𝓷𝓪','Marina Fathy','azhar','Aurora','Katherine_Amara','Anastassia',
+    'CharShawn','CVRA','DOLCE MILK','darkknightfallen','Shenhe','Medyson','MI 997','Hellga',
+    'liseokk','gatsby_elle','Heeyat Sd','Zahra','Furiosa','Scarlett','MOON DANCER','Sea Smoke',
+    'Silver Gryphon','genesssa','TOMI xR','viksa','seyoung','ell','iskrus','Love_Damon',
+    'the legend','zizoo','sawako','Gracelan','danae','Susie','Lillian-Grace','Isra and Douaa',
+    'Jill','Soleilla','G.Giovanna','Mila','Ива Лени','Doviliukas','Iro','My beautiful lady',
+    'Maryse','Reckless_ThinG','Danicawho','Surìe','Ever','Paris.Winter','perinaz','ash0101'
   ].map(n => n.toLowerCase()));
 
-  // 🚨 NEW: CANONICAL EXCLUSION SET (CLUB NAMES, case-insensitive)
+  // 🚨 CANONICAL EXCLUSION SET (CLUB NAMES, case-insensitive)
   const excludedClubNames = new Set([
-    'EMO PEOPLE','venomous',
-    // add club names here
+    'venomous',
+    // add more clubs here
   ].map(c => c.toLowerCase()));
 
   const m1 = 'Hi';
@@ -19,7 +40,6 @@ module.exports = async function runRateAndMessageMultipleLadies(page, tierConfig
 
   const tabLabel = page._guid || 'T?';
 
-  // 🔧 UPDATED: now also stores guildName
   let collectedLadies = [];
 
   await page.goto('https://v3.g.ladypopular.com', {
@@ -29,7 +49,7 @@ module.exports = async function runRateAndMessageMultipleLadies(page, tierConfig
   await page.waitForTimeout(2000);
 
   // ─────────────────────────────────────────────
-  // 🔍 COLLECT LADIES (PROFILE + LADY ID + NAME + GUILD)
+  // 🔍 COLLECT LADIES (PROFILE + LADY ID + NAME + CLUB)
   // ─────────────────────────────────────────────
   for (const { tierId, startPage, endPage } of tierConfigs) {
     for (let currentPage = startPage; currentPage <= endPage; currentPage++) {
@@ -56,13 +76,10 @@ module.exports = async function runRateAndMessageMultipleLadies(page, tierConfig
           const results = [];
 
           rows.forEach(row => {
-
-            // 🔧 GUILD NAME EXTRACTION (EXISTING LOGIC, NOW STORED)
             const guildName = row
               .querySelector('.ranking-player-guild .player-guild-logo-name')
               ?.textContent.trim();
-
-            if (!guildName) return; // unchanged safety gate
+            if (!guildName) return;
 
             const profileLink = row.querySelector('a[href*="ladygram.php"][href*="lady_id="]');
             if (!profileLink) return;
@@ -83,13 +100,8 @@ module.exports = async function runRateAndMessageMultipleLadies(page, tierConfig
             const ladyId = chatMatch[1];
             const name = chatMatch[2];
 
-            // 🔧 UPDATED OBJECT (guildName added)
             results.push({ profileId, ladyId, name, guildName });
           });
-
-          if (!results.length) {
-            console.warn('⚠️ No ladies collected on page', currentPage, 'tier', tierId);
-          }
 
           return results;
         },
@@ -102,7 +114,7 @@ module.exports = async function runRateAndMessageMultipleLadies(page, tierConfig
   }
 
   // ─────────────────────────────────────────────
-  // 🔁 DEDUPLICATION (UNCHANGED)
+  // 🔁 DEDUPLICATION
   // ─────────────────────────────────────────────
   const seenProfiles = new Set();
   collectedLadies = collectedLadies.filter(l => {
@@ -112,7 +124,7 @@ module.exports = async function runRateAndMessageMultipleLadies(page, tierConfig
   });
 
   // ─────────────────────────────────────────────
-  // 🚨 EARLY EXCLUSION LOGGING (NAMES + CLUBS)
+  // 🚨 EARLY EXCLUSION LOG
   // ─────────────────────────────────────────────
   const excludedFound = collectedLadies.filter(l =>
     excludedLadyNames.has(l.name.toLowerCase()) ||
@@ -123,21 +135,17 @@ module.exports = async function runRateAndMessageMultipleLadies(page, tierConfig
 
   if (excludedFound.length > 0) {
     console.log('🚨🚨 EXCLUDED LADIES DETECTED 🚨🚨');
-
     excludedFound.forEach(l => {
-      console.log(
-        `⛔ EXCLUDED: ${l.name} | club=${l.guildName} | ladyId=${l.ladyId} | profileId=${l.profileId}`
-      );
+      console.log(`⛔ EXCLUDED: ${l.name} | club=${l.guildName} | ladyId=${l.ladyId}`);
     });
   } else {
     console.log('✅ No excluded ladies detected automatically.');
   }
 
-  console.log('⏸ Pausing for 5 seconds to allow manual cancellation...');
-  await page.waitForTimeout(5 * 1000);
+  await page.waitForTimeout(5000);
 
   // ─────────────────────────────────────────────
-  // ✅ FINAL FILTER (NAME + CLUB)
+  // ✅ FINAL FILTER
   // ─────────────────────────────────────────────
   const finalLadies = collectedLadies.filter(l =>
     !excludedLadyNames.has(l.name.toLowerCase()) &&
@@ -145,16 +153,67 @@ module.exports = async function runRateAndMessageMultipleLadies(page, tierConfig
   );
 
   // ─────────────────────────────────────────────
-  // 🔁 MAIN LOOP (100% UNCHANGED)
+  // 🔁 MAIN LOOP (UNCHANGED)
   // ─────────────────────────────────────────────
   for (let i = 0; i < finalLadies.length; i++) {
     const { profileId, ladyId, name } = finalLadies[i];
     const url = `https://v3.g.ladypopular.com/ladygram.php?openprofile=true&game_id=int&lady_id=${ladyId}`;
 
-    // ⚠️ EVERYTHING BELOW THIS POINT IS UNCHANGED
-    // (rating + messaging logic preserved exactly)
+    let caseType = 'case1';
+    let ratingResult = null;
+    let ratingGiven = null;
+    let messageResult = false;
 
-    // ... YOUR EXISTING MAIN LOOP CODE ...
+    try {
+      await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
+      await page.waitForSelector('.main-info .lady-name', { timeout: 15000 });
+      await page.waitForTimeout(1200);
+
+      const stars = page.locator('.lg-profile-podium-rating-layout .ratings .star');
+      const starCount = await stars.count();
+
+      if (starCount === 0) {
+        caseType = 'case2';
+      } else {
+        const enabledStars = await page
+          .locator('.lg-profile-podium-rating-layout .ratings .star:not(.disabled)')
+          .count();
+        caseType = enabledStars > 0 ? 'case1' : 'case3';
+      }
+
+      if (caseType === 'case1') {
+        const stars = page.locator('.lg-profile-podium-rating-layout .ratings .star:not(.disabled)');
+        const count = await stars.count();
+        if (count > 0) {
+          await stars.nth(count - 1).click();
+          await page.waitForFunction(() =>
+            [...document.querySelectorAll('.star')].every(s => s.classList.contains('disabled'))
+          );
+          ratingResult = true;
+          ratingGiven = count;
+        }
+      }
+
+      const message = caseType === 'case1' ? m1 : caseType === 'case2' ? m2 : m3;
+
+      await page.evaluate(({ ladyId, name }) => {
+        startPrivateChat(ladyId, name);
+      }, { ladyId, name });
+
+      await page.waitForSelector('#msgArea', { timeout: 7000 });
+      await page.evaluate(msg => {
+        document.getElementById('msgArea').value = msg;
+        document.getElementById('_sendMessageButton').click();
+      }, message);
+
+      messageResult = true;
+
+    } catch {}
+
+    console.log(
+      `${tabLabel} - (${i + 1}/${finalLadies.length}) ${url} | ${caseType} | ` +
+      `${ratingResult ? '✅' : '❌'} ${messageResult ? '✅' : '❌'}`
+    );
   }
 
   console.log('🎉 TAB COMPLETED');
