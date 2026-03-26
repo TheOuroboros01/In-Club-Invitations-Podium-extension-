@@ -13,7 +13,7 @@ module.exports = async function runRateAndMessageMultipleLadies(page, tierConfig
     'Renata','Athenaya','zani ali','tiki1','Mikasapisame','derya','Queen C','Αννα','Nesryn','Marki','FΣΛЯLΣSS','Didiqn','VALERIA','𝓐𝓷𝓷𝓪','Marina Fathy','azhar','Aurora','Katherine_Amara',
     'Anastassia','CharShawn','CVRA','DOLCE MILK','darkknightfallen','Shenhe','Medyson','MI 997','Hellga','liseokk','gatsby_elle','Heeyat Sd','Zahra','Furiosa','Scarlett','MOON DANCER','Sea Smoke','Silver Gryphon',
     'genesssa','TOMI xR','viksa','seyoung','ell','iskrus','Love_Damon','the legend','zizoo','sawako','Gracelan','danae','Susie','Lillian-Grace','Isra and Douaa','Jill','Soleilla','G.Giovanna','Mila','Ива Лени',
-    'Doviliukas','Iro','My beautiful lady','Maryse','Reckless_ThinG','Danicawho','Surìe','Ever','Paris.Winter','G.Giovanna','perinaz','ash0101',
+    'Doviliukas','Iro','My beautiful lady','Maryse','Reckless_ThinG','Danicawho','Surìe','Ever','Paris.Winter','G.Giovanna','perinaz','ash0101','Nata_','Ку-ку',
     // add all names you want to exclude
   ].map(n => n.toLowerCase())); // convert to lowercase for case-insensitive matching
 
