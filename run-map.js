@@ -2,13 +2,13 @@ module.exports = {
 
   // ================= RUN 1 =================
   1: [
-    { tierId: 10, startPage: 1,   endPage: 50 },
-    { tierId: 10, startPage: 51,   endPage: 100 },
-    { tierId: 10, startPage: 101,  endPage: 150 },
-    { tierId: 10, startPage: 151,  endPage: 200 },
-    { tierId: 10, startPage: 201,  endPage: 250 },
-    { tierId: 10, startPage: 251,  endPage: 296 }
-  ], // full tier 10 divided into 6 slots.
+    { tierId: 10, startPage: 1,   endPage: 20 },
+    { tierId: 10, startPage: 21,   endPage: 40 },
+    { tierId: 10, startPage: 41,  endPage: 60 },
+    { tierId: 10, startPage: 61,  endPage: 80 },
+    { tierId: 10, startPage: 81,  endPage: 100 },
+    { tierId: 10, startPage: 101,  endPage: 122 }
+  ], // full tier 10 divided into 6 slots (only ladies above level 65).
 
   // ================= RUN 2 =================
   2: [
