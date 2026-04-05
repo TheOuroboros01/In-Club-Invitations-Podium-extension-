@@ -31,9 +31,9 @@ module.exports = async function runRateAndMessageMultipleLadies(page, tierConfig
     // add more clubs here
   ].map(c => c.toLowerCase()));
 
-  const m1 = 'Hi honey! If you r open to a change, would u like to join our club? Donations arent needed, just participate in club fights when u can. In 2-3 weeks, we plan to win all 5 club trophies to help boost gameplay. It will be lovely to have u with us! :)';
-  const m2 = 'Hi honey! If you r open to a change, would u like to join our club? Donations arent needed, just participate in club fights when u can. In 2-3 weeks, we plan to win all 5 club trophies to help boost gameplay. It will be lovely to have u with us! :)';
-  const m3 = 'Hi honey! If you r open to a change, would u like to join our club? Donations arent needed, just participate in club fights when u can. In 2-3 weeks, we plan to win all 5 club trophies to help boost gameplay. It will be lovely to have u with us! :)';
+  const m1 = 'Hello ⁠◕⁠‿⁠◕ I want to invite you to our club♥ We have no fee, we are calm, and we add no pressure to your gameplay♥ We participate in club fights, but only until we secure the best trophies in the game♥ Itd be a pleasure if you became a part of us';
+  const m2 = 'Hello ⁠◕⁠‿⁠◕ I want to invite you to our club♥ We have no fee, we are calm, and we add no pressure to your gameplay♥ We participate in club fights, but only until we secure the best trophies in the game♥ Itd be a pleasure if you became a part of us';
+  const m3 = 'Hello ⁠◕⁠‿⁠◕ I want to invite you to our club♥ We have no fee, we are calm, and we add no pressure to your gameplay♥ We participate in club fights, but only until we secure the best trophies in the game♥ Itd be a pleasure if you became a part of us';
   //Hi honey! If you're open to a change, would u like to join our club? Donations aren’t needed, just participate in club fights when u can. In 2-3 weeks, we plan to win all 5 club trophies to help boost gameplay. It'd be lovely to have u with us! :)
 
   const tabLabel = page._guid || 'T?';
